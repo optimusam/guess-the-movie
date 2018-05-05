@@ -4,7 +4,7 @@ public class GuessTheMovie {
     public static ArrayList<String> pickMovie() {
         ArrayList<String> movies = new ArrayList<String>();
         try {
-            File file = new File("C:\\Users\\Sameer Giri\\IdeaProjects\\guessMovie\\src\\movie-titles.txt");
+            File file = new File("movie-titles.txt");
             Scanner fileScanner = new Scanner(file);
             while (fileScanner.hasNextLine()) {
                 String movie_name = fileScanner.nextLine().split("\t")[1];
